@@ -1,20 +1,17 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-2.2.2.min.js"></script>
     <title>@Page.Title</title>
     @RenderSection("head", required: false)
+    @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div class="jumbotron">
-        Hello Bootstrap!
-        <p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Installed</a>
-        </p>
-    </div>
+    <
+    <h1>This is from the _ViewStart.cshtml</h1>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
     @RenderBody()
 </body>
 </html>
